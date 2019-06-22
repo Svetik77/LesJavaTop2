@@ -6,9 +6,12 @@ import java.util.Set;
 
 import static ru.javawebinar.topjava.util.MealsUtil.DEFAULT_CALORIES_PER_DAY;
 
-public class User extends NamedEntity {
+// http://topjava.herokuapp.com/login     TODO link to topjava project
+// https://github.com/JavaOPs/topjava/blob/master/description.md   TODO balbla
+// http://spring-projects.ru/projects/spring-data/jpa/  TODO balbla
+ public class User extends NamedEntity {
 
-    private String email;
+    private String email;  //TODO balbla
 
     private String password;
 

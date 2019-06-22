@@ -7,8 +7,8 @@
 	
 	<display-name>TopAufgabe2</display-name>
 	<welcome-file-list>
-		<welcome-file>meals</welcome-file>
-	 
+<!-- 		<welcome-file>meals</welcome-file> -->
+		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 	
   
