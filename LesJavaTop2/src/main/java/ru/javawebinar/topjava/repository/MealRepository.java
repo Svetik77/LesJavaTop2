@@ -19,3 +19,4 @@ public interface MealRepository {
 
     Collection<Meal> getAll();
 }
+ 

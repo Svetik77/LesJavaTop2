@@ -1,15 +1,16 @@
 package ru.javawebinar.topjava.web.user;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import ru.javawebinar.topjava.model.User;
-import ru.javawebinar.topjava.service.UserService;
-
-import java.util.List;
-
 import static ru.javawebinar.topjava.util.ValidationUtil.checkIdConsistent;
 import static ru.javawebinar.topjava.util.ValidationUtil.checkNew;
+
+import java.util.Collection;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import ru.javawebinar.topjava.model.User;
+import ru.javawebinar.topjava.service.UserService;
 
 public abstract class AbstractUserController {
     protected final Logger LOG = LoggerFactory.getLogger(getClass());
@@ -17,7 +18,7 @@ public abstract class AbstractUserController {
     @Autowired
     private UserService service;
 
-    public List<User> getAll() {
+    public Collection<User> getAll() {
         LOG.info("getAll");
         return service.getAll();
     }
@@ -27,6 +28,8 @@ public abstract class AbstractUserController {
         return service.get(id);
     }
 
+    // hello/kuku/controller/meals
+    
     public User create(User user) {
         LOG.info("create " + user);
         checkNew(user);
